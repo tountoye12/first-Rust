@@ -13,3 +13,13 @@ pub fn print_array(mut arr: &[u32]) {
 
 
 }
+
+// pub fn copy_array_to_vec(mut arr: &[u32]) {
+
+//     let mut vec:Vec<&u32> = Vec::new();
+
+//     for value  in arr {
+//         vec.push(value);
+//     }
+
+// }
