@@ -1,25 +1,27 @@
 
-#[derive(Debug)]
-struct Person<'a> {
-    name: &'a str,
-    age:u8
-}
+#![allow(warnings)]
+mod variables;
+mod literals;
+mod tuples;
+mod arrays;
+
+mod controlfow;
 
 fn main() {
-    // println!("Hello, world!");
-    // println!("I'm Diallo and want to learn Rust");
+   
+    // variables::run();
+    // variables::print_name();
 
-    // let x = 5 + 90 + 5;
+    // literals::literal();
+   // tuples::tuple();
+    let slice:[i32; 7] = [1, 3, 4, 10, 4, 5, 20];
+    let arr = [10, 20, 30, 40, 50];
+    // arrays::analyze_slice(&slice);
 
-    // println!("Is `x` 10 or 100 ? x = {}", x);
+    controlfow::print_array(&arr);
 
-    let name: &str = "diallo";
-    let age = 33;
-    let person = Person  {
-        name,
-        age
-    };
 
-    println!("{:#?}", person);
+
+    
 
 }
