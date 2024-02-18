@@ -7,7 +7,6 @@ pub fn print_array(mut arr: &[u32]) {
     // for i in arr {
     //     println!("{} ", i);
     // }
-    
     for element  in arr.iter(){ 
         println!("The value is {} ", element)
     }
